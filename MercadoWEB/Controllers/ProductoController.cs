@@ -8,11 +8,11 @@ namespace MercadoWEB.Controllers
     {
         public IActionResult Index()
         {
-            var productos = new List<ProductoModel>() 
+            var productos = new List<Producto>() 
             {
-                new ProductoModel(){ NombreProducto = "Arroz", Descripcion="80% grano entero", Categoria="Granos básicos", Precio = 15},
-                new ProductoModel(){ NombreProducto = "Frijoles", Descripcion="grano rojo", Categoria="Granos básicos", Precio = 22},
-                new ProductoModel(){ NombreProducto = "Gaseosa", Descripcion="grano rojo", Categoria="Bebidas", Precio = 30}
+                new Producto(){ NombreProducto = "Arroz", Descripcion="80% grano entero", Precio = 15},
+                new Producto(){ NombreProducto = "Frijoles", Descripcion="grano rojo", Precio = 22},
+                new Producto(){ NombreProducto = "Gaseosa", Descripcion="grano rojo", Precio = 30}
             };
 
             return View("Productos",productos);
