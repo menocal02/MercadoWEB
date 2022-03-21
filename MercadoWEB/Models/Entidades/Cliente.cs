@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace MercadoWEB.Models.Entidades
 {
-    public class Cliente
+    public class Cliente 
     {
         [Key]
         public int IdCliente { get; set; }
         [Required(ErrorMessage = "Campo requerido")]
         [StringLength(600)]
         public string NombreCompleto { get; set; }
-        [Required(ErrorMessage = "Campo requerido")]
+        [Required]
         [StringLength(600)]
         public string Direccion { get; set; }
     }
