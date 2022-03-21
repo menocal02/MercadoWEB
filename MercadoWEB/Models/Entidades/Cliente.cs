@@ -13,7 +13,7 @@ namespace MercadoWEB.Models.Entidades
         [Required(ErrorMessage = "Campo requerido")]
         [StringLength(600)]
         public string NombreCompleto { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Campo requerido")]
         [StringLength(600)]
         public string Direccion { get; set; }
     }
