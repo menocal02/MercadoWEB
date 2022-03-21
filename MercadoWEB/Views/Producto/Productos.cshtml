@@ -2,7 +2,7 @@
     ViewData["Title"] = "Lista Productos";
 }
 
-@model IEnumerable<MercadoWEB.Models.Producto>;
+@model IEnumerable<MercadoWEB.Models.Entidades.Producto>;
 
 <div class="text ">
     <h1 class="text-left text-primary text-si p-2">Lista de Productos</h1>
@@ -97,7 +97,7 @@
                  <div class="row">
                 <div class="col-md-12 text-right">
                     <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cerrar</button>
-                    <button class="btn btn-outline-primary">Guardar</button>
+                    <button id="btnGuardar"class="btn btn-outline-primary">Guardar</button>
                 </div>
             </div>
             </div>

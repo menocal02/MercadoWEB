@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace MercadoWEB.Models
+namespace MercadoWEB.Models.Entidades
 {
     public class Producto
     {
